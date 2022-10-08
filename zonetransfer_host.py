@@ -14,5 +14,7 @@ for line in f:
 	print("Attempting zone transfer for " + line)
 	print("#" * 50)
 	os.system("host -l " + domain + " " + line)
+
+f.close()
 	
 	
